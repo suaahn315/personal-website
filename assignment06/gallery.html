@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+	#header {
+		background-image: url("gallery_images/background.jpeg");
+		height: 450px;
+		background-position: 90% 10%;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	#container {
+		overflow: hidden;
+		padding: 53px 3px 3px 3px;
+	}
+
+	#nav-wrapper {
+		top: 450px;
+		z-index: 1;
+	}
+
+	#nav li:hover {
+		position: relative;
+	}
+
+	#nav .current {
+		background-color: #ffb3b3;
+	}
+
+	.current + a {
+		color: black;
+	}
+
+	#gallery {
+		width: 950px;
+		margin: auto;
+		height: auto;
+		background-color: #884dff;
+	}
+
+	#first-row, #second-row, #third-row {
+		position: relative;
+	}
+
+	.overlay, .overlay2 {
+		background-color: rgba(0,0,0,.6);
+		color: white;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		visibility: hidden;
+		margin: auto;
+	}
+
+	.overlay2 {
+		padding-top: 70px;
+	}
+
+	.overlay {
+		line-height: 200px;
+	}
+
+	#second-row .overlay p {
+		line-height: 300px;
+	}
+
+	#third-row .overlay p {
+		line-height: 200px;
+	}
+
+	.frame1:hover .overlay , .frame2:hover .overlay2 , .frame2:hover .overlay, .frame3:hover .overlay, .frame3:hover .overlay2 , .frame4:hover .overlay , .frame5:hover .overlay , .frame6:hover .overlay , .frame7:hover .overlay {
+		visibility: visible;
+	}
+
+	#first-row img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#second-row img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#third-row img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.frame1 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 300px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame2 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 213px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame3 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 200px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame4 {
+		float: left;
+		margin: 3px;
+		height: 300px;
+		width: 266px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame5 {
+		float: left;
+		margin: 3px;
+		width: 200px;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame6 {
+		float: left;
+		margin: 3px;
+		width: 466px;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.frame7 {
+		float: left;
+		margin: 3px;
+		width: 313px;
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#gallery > img {
+		width: auto;
+		height: 100%;
+	}
+
+
+</style>
+
+</head>
+<body>
+<div id="header">
+	<h1>Gallery</h1>
+</div>
+
+<div id="nav-wrapper">
+	<div id="nav">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+				<ul>
+					<li><a href="#plot_summary">Plot Summary</a></li>
+					<li><a href="#review">Review</a></li>
+					<li><a href="#reflection">Reflection</a></li>
+				</ul>
+			</li>
+			<li class="current"><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</div> <!-- #nav -->
+</div> <!-- #nav-wrapper -->
+
+<div id="container">
+	<div id="gallery">
+		<div id="first-row">
+			<div class="frame1">
+				<img src="gallery_images/img1.jpeg" alt="cast group picture">
+				<div class="overlay">
+					<p>Group picture with the hotel staff</p>
+				</div>
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img2.jpeg" alt="garden">
+				<div class="overlay2">
+					<p>Goo Chan-seong convincing</p>
+					<p>Jang Manwol</p>
+				</div>
+			</div>
+
+			<div class="frame3">
+				<img src="gallery_images/img10.jpeg" alt="concierges ">
+				<div class="overlay2">
+					<p>Ji Hyun-joong mad at Kim</p>
+					<p>Seon-bi</p>
+				</div>
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img8.jpg" alt="under the tree">
+				<div class="overlay2">
+					<p>Goo Chan-seong resting under</p>
+					<p>a tree</p>
+				</div>
+			</div>
+		</div> <!-- .first-row -->
+
+		<div id="second-row">
+			<div class="frame4">
+				<img src="gallery_images/img9.jpg" alt="concierges 2">
+				<div class="overlay">
+					<p>Spotted suspicious behavior</p>
+				</div>
+			</div>
+
+			<div class="frame5">
+				<img src="gallery_images/img6.jpeg" alt="IU solo picture">
+				<div class="overlay">
+					<p>Satisfied Jang Manwol</p>
+				</div>
+			</div>
+
+			<div class="frame6">
+				<img src="gallery_images/img3.jpeg" alt="greeting">
+				<div class="overlay">
+					<p>Hotel staff greeting VIP customer</p>
+				</div>
+			</div>
+		</div> <!-- .second-row -->
+
+		<div id="third-row">
+			<div class="frame3">
+				<img src="gallery_images/img4.jpg" alt="discussing">
+				<div class="overlay2">
+					<p>Jang Manwol mad at Goo</p>
+					<p>Chan-seong</p>
+				</div>
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img5.jpeg" alt="at the parking lot">
+				<div class="overlay">
+					<p>Jang Manwol choosing a car</p>
+				</div>
+			</div>
+
+			<div class="frame3">
+				<img src="gallery_images/img11.jpg" alt="around the table">
+				<div class="overlay">
+					<p >Emergency meeting!</p>
+				</div>
+			</div>
+
+			<div class="frame7">
+				<img src="gallery_images/img7.jpeg" alt="IU close-up">
+				<div class="overlay">
+					<p>"Good job Goo Chan-seong"</p>
+				</div>
+			</div>
+		</div> <!-- .third-row -->
+	</div> <!-- #gallery -->
+</div> <!-- #container -->
+
+<div class="clearfloat"></div>
+
+<div id="footer">
+	<p>Watch it on Netflix!</p>
+</div>
+
+</body>
+</html>

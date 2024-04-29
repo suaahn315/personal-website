@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Poppins&family=Signika+Negative:wght@700&family=Yusei+Magic&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-image: url("img/background.jpeg");
+			font-family: 'Dosis', sans-serif;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding-bottom: 100px;
+			background-color: #977e68;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 50px;
+			text-shadow: 2px 2px 0px grey;
+		}
+
+		img {
+			height: 500px;
+			width: auto;
+			position: relative;
+			top: 0px;
+		}
+
+		p {
+			font-size: 25px;
+		}
+
+		.message {
+			width: 200px;
+			height: 50px;
+			margin-left: 200px;
+			background-color: white;
+			position: relative;
+			display: block;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 10px;
+			z-index: 1;
+		}
+
+		.point {
+			width: 40px;
+  			height: 40px;
+  			position: absolute;
+  			transform: rotate(-135deg);
+  			border-radius: 0 0 12px 0;
+  			margin-top: 20px;
+  			left: 20px;
+  			background-color: white;
+  			z-index: -1;
+  		}
+
+  		#movement {
+  			position: relative;
+  			width: 500px;
+  			top: 150px;
+  			animation: moveTotoro 10s 2s infinite;
+  		}
+
+  		@keyframes moveTotoro {
+  			0% {left: 0px;}
+  			100% {left: 1000px;}
+  		}
+
+
+	</style>
+<head>
+<body>
+	<h1>Totoro Sending Love</h1>
+
+	<div id="movement">
+		<div class="message">
+			<div class="point"></div>
+			<p>I love you all!</p>
+		</div>
+		<img src="img/totoro.gif" alt="Moving Totoro">
+	</div>
+
+</body>
+</html>

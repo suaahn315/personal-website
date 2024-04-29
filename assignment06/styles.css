@@ -1,0 +1,97 @@
+
+#header {
+		background-image: url("index_images/hotel_del_luna.jpeg");
+		height: 500px;
+		width: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 70% 30%;
+	}
+
+	@font-face {
+		font-family: "Hotel Del Luna";
+		src: url("Fonts/header.otf");
+	}
+
+	h1 {
+		font-family: "Hotel Del Luna", serif;
+		color: whitesmoke;
+		text-align: center;
+		text-shadow: 2px 2px 1px mediumpurple;
+		margin: 0;
+	}
+
+	body {
+		background-color: #ccb3ff;
+		margin: 0;
+	}
+
+	#container {
+		width: 950px;
+		margin: 0 auto;
+		background-color: #884dff;
+	}
+
+	#nav {
+		width: 400px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#nav-wrapper {
+		background-color: black;
+		position: absolute;
+		top: 500px;
+		left: 0px;
+		right: 0px;
+	}
+
+	#nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#nav li {
+		width: 200px;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+		font-size: 21px;
+		position: relative;
+		background-color: black;
+		margin: 0 auto;
+	}
+
+	#nav li a {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+	}
+
+	#nav li:hover {
+		background-color: #ffb3b3;
+	}
+
+	#nav li > a:hover {
+		color: black;
+	}
+
+	#nav ul ul {
+		visibility: hidden;
+		position: absolute;
+	}
+
+	#nav li:hover > ul {
+		visibility: visible;
+	}
+
+	#footer {
+		background-color: #8585ad;
+		text-align: center;
+		margin: 0 auto;
+		padding: 5px;
+		font-weight: bold;
+	}
+
+	.clearfloat {clear: both;}
